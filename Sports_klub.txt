@@ -1,0 +1,25 @@
+
+# 2 Tables
+
+# Table klub (club)
+
+# c.execute("CREATE TABLE klub (klub_id int NOT NULL AUTO_INCREMENT, "
+#           "nazwa varchar(45) COLLATE utf8_polish_ci NOT NULL, "
+#           "miasto varchar(45) COLLATE utf8_polish_ci NOT NULL, PRIMARY KEY(klub_id))")
+#
+#
+# conn.commit()
+
+
+# Table zawodnik (player)
+
+# c.execute("CREATE TABLE zawodnik (zawodnik_id int NOT NULL, "
+#           "imie varchar(45) COLLATE utf8_polish_ci NOT NULL, "
+#           "nazwisko varchar(45) COLLATE utf8_polish_ci NOT NULL, "
+#           "klub_id int NOT NULL, "
+#           "nazwa_klub varchar(45) COLLATE utf8_polish_ci NOT NULL, PRIMARY KEY(zawodnik_id), "
+#           "CONSTRAINT klub_id FOREIGN KEY (klub_id) REFERENCES klub (klub_id) ON DELETE CASCADE)")
+#
+# conn.commit()
+
+
